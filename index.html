@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>CoKo - Your music. Your vibe.</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Right Navigation Buttons -->
+  <div class="top-buttons">
+    <a href="https://github.com/ChinmayPrakashRout03" target="_blank" class="cute-btn btn-github">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.113.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+      </svg>
+      <span>GitHub</span>
+    </a>
+    
+    <a href="downloads/CoKo.apk" download class="cute-btn btn-download">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg>
+      <span>Download</span>
+    </a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <!-- Background Canvas for Audio Waves & Sparkles (Locked to Hero) -->
+    <canvas id="bgCanvas" class="bg-canvas"></canvas>
+
+    <div class="main-content">
+      <!-- Ghost Logo Box with Blink Logic -->
+      <div class="ghost-wrapper">
+        <svg viewBox="0 0 1024 1024" preserveAspectRatio="xMidYMid meet" class="ghost-svg">
+          <image href="assets/body.png" width="1024" height="1024" />
+          <image href="assets/eyes.png" width="1024" height="1024" class="main-ghost-eyes" />
+        </svg>
+      </div>
+
+      <!-- Title & Subtitle -->
+      <h1 class="hero-title">C o K o</h1>
+      <p class="hero-subtitle">Your music. Your vibe.</p>
+
+      <!-- Version Pill -->
+      <div class="version-pill">
+        Latest version &bull; V1.0.0
+      </div>
+
+      <!-- Features Grid -->
+      <div class="features-grid-hero">
+        <div class="feature-item">
+          <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="2" y1="2" x2="22" y2="22"></line>
+            <path d="M8.5 16.5a5 5 0 0 1 7 0"></path>
+            <path d="M2 8.82a15 15 0 0 1 4.17-2.65"></path>
+            <path d="M10.66 5c4.01-.36 8.14.9 11.34 3.82"></path>
+            <path d="M5 12.859a10 10 0 0 1 5.17-2.69"></path>
+            <path d="M19 12.859a10 10 0 0 0-2.007-1.523"></path>
+          </svg>
+          <span>Offline</span>
+        </div>
+        <div class="feature-item divider">
+          <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v20"></path>
+            <path d="M17 5v14"></path>
+            <path d="M22 10v4"></path>
+            <path d="M7 5v14"></path>
+            <path d="M2 10v4"></path>
+          </svg>
+          <span>High Quality</span>
+        </div>
+        <div class="feature-item">
+          <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+          </svg>
+          <span>No Ads</span>
+        </div>
+      </div>
+
+      <a href="#all-releases" class="footer-link">All Releases &rarr;</a>
+
+    </div>
+  </section>
+
+  <div class="page-container">
+
+    <!-- Why CoKo Section -->
+    <section id="why-coko" class="section why-section">
+      <div class="section-header">
+        <div class="header-left">
+          <h2>Why CoKo?</h2>
+          <p>Everything you love about music, in one place.</p>
+        </div>
+        <div class="header-right">
+          <p class="quote-small">Music isn't just sound,<br>it's a better you.</p>
+        </div>
+      </div>
+
+      <div class="bento-grid">
+        <div class="bento-card">
+          <div style="margin: 0 auto 15px auto; width: 48px; height: 48px;">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="12" fill="#ffffff"/>
+              <circle cx="12" cy="12" r="4" fill="#111111"/>
+            </svg>
+          </div>
+          <h3>YouTube Music</h3>
+          <p>Seamless integration</p>
+        </div>
+        <div class="bento-card">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </div>
+          <h3>Offline Playback</h3>
+          <p>Listen anytime, anywhere</p>
+        </div>
+        <div class="bento-card">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"/><path d="M17 5v14"/><path d="M22 10v4"/><path d="M7 5v14"/><path d="M2 10v4"/></svg>
+          </div>
+          <h3>High Quality Audio</h3>
+          <p>Crystal clear sound</p>
+        </div>
+        <div class="bento-card">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+          </div>
+          <h3>No Ads</h3>
+          <p>Distraction free experience</p>
+        </div>
+        <div class="bento-card">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>Lightweight & Fast</h3>
+          <p>Smooth and minimal</p>
+        </div>
+        <div class="bento-card">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3>Made for Music Lovers</h3>
+          <p>Built by a listener, for listeners</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- App Preview Section -->
+    <section class="section preview-section">
+      <div class="preview-layout">
+        
+        <div class="preview-text">
+          <span class="eyebrow">APP PREVIEW</span>
+          <h2>A<br>Closer Look.</h2>
+          <p>Simple. Beautiful. Powerful.<br>Explore the interface and see how CoKo brings your music to life.</p>
+          <div class="handwriting tilt-left">Same Vibe<br>Different You</div>
+        </div>
+
+        <div class="preview-images">
+          <div class="phone-mockup">
+            <img src="assets/coko_player_billie_eilish.png" alt="Player Screen">
+          </div>
+          <div class="phone-mockup offset-down">
+            <img src="assets/coko_home_billie_eilish.png" alt="Home Screen">
+          </div>
+        </div>
+
+        <div class="preview-extra">
+          <div class="handwriting tilt-right" id="carousel-quote">Good<br>Music<br>Better<br>Days.</div>
+          <div class="carousel-controls">
+            <div class="dots" id="carousel-dots">
+              <span class="dot active" data-index="0"></span><span class="dot" data-index="1"></span><span class="dot" data-index="2"></span>
+            </div>
+            <div class="arrows">
+              <button class="arrow-btn" id="carousel-prev">&lt;</button>
+              <button class="arrow-btn" id="carousel-next">&gt;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Download Card Section -->
+    <section class="section download-section">
+      <div class="download-card">
+        <div class="download-left">
+          <h2>Download CoKo</h2>
+          <p>Get the latest version and start listening today.</p>
+          <a href="downloads/CoKo.apk" download class="btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download APK (V1.0.0)
+          </a>
+          <div class="download-meta">
+            64.4 MB &bull; Updated 22 Sep 2025 &bull; Free
+          </div>
+        </div>
+        <div class="download-right">
+          <div class="qr-box">
+            <div class="qr-placeholder">QR Code</div>
+            <p>Scan to Download</p>
+            <span>Get CoKo on your Android device.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Previous Releases & Quote -->
+    <section id="all-releases" class="section releases-section">
+      <div class="releases-container">
+        <div class="releases-header">
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></div>
+          <div>
+            <h3>All Releases</h3>
+            <p>Need an older version? No worries.</p>
+          </div>
+
+        </div>
+        <div class="release-list">
+          <div class="release-row">
+            <a href="downloads/CoKo.apk" download class="row-dl-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </a>
+            <span class="ver">V1.0.0</span>
+            <span class="date">22 Sep 2026</span>
+            <span class="size">64.4 MB</span>
+            <span class="badge">Latest</span>
+          </div>
+        </div>
+      </div>
+      <div class="quote-container">
+        <div class="quote-text">
+          Music isn't just sound,<br>
+          <span class="quote-highlight">it's a better you.</span>
+        </div>
+        <div class="quote-line"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-logo">
+        <svg viewBox="0 0 1024 1024" preserveAspectRatio="xMidYMid meet" class="small-ghost"><image href="assets/body.png" width="1024" height="1024" /><image href="assets/eyes.png" width="1024" height="1024" /></svg>
+        <div class="footer-logo-text">
+          <h4>C o K o</h4>
+          <p>Your music. Your vibe.</p>
+        </div>
+      </div>
+
+      <div class="footer-credit">
+        Made with <span style="color: #ff3366;">&hearts;</span> for the listeners.
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Audio Visualizer Script -->
+  <script src="app.js"></script>
+</body>
+</html>
